@@ -2,11 +2,8 @@
 
 int main()
 {
-    int i = 2340, x = 0, y, z, p;
-    while (scanf("%d", &x) != EOF)
-    {
-        printf("%d ", x % 20);
-        printf("%d \n", x % 10);
-    }
+    int i, a[101]={0};
+
+    printf("asdf");
     return 0;
 }
