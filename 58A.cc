@@ -14,23 +14,30 @@ using namespace std;
 
 int main()
 {
-    string s, match = "hello";
-    int index = 0;
+    // string s, match = "hello";
+    // int index = 0;
+    // cin >> s;
+    // for (int i = 0; i < s.size(); i++)
+    // {
+    //     if (s[i] == match[index])
+    //     {
+    //         index++;
+    //     }
+    // }
+    // if (index == 5)
+    // {
+    //     cout << "YES" << endl;
+    // }
+    // else
+    // {
+    //     cout << "NO" << endl;
+    // }
+
+    // alternative
+    string s;
     cin >> s;
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] == match[index])
-        {
-            index++;
-        }
-    }
-    if (index == 5)
-    {
-        cout << "YES" << endl;
-    }
-    else
-    {
-        cout << "NO" << endl;
-    }
+    regex x("h.*e.*l.*l.*o");
+    regex_search(s, x) ? cout << "Yes" : cout << "No";
+
     return 0;
 }
